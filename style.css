@@ -1,0 +1,103 @@
+*{
+    color: white;
+    font-family:'Roboto';
+    text-decoration: none;
+    
+}
+
+body{ /* Criando a divisão do site */
+
+    background-color:#141416;
+
+    display:grid;
+    height: 100vh;
+
+    grid-template-rows: 60px 80px 1fr 50px;
+
+    grid-template-areas: 
+    "nav"
+    "header"
+    "main";
+
+    gap: 80px;
+}
+
+nav{
+    grid-area:nav;
+}
+
+header{grid-area:header;}
+
+main{grid-area:main;}
+
+#barra-navegacao{
+    display: flex;
+    position: relative;
+    gap:33.33%;
+    align-items: center;
+    padding: 30px;
+    margin: 10px;
+    
+    font-weight: bold;
+    background-color: #1a1b1f;
+    border:solid 1px #353945;
+    
+}
+
+#user-link{
+    display: flex;
+    position: relative;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    gap: 10px;
+    width: 100px;
+    
+}
+
+#user-link img{
+    background-color: aqua;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: solid 2px grey;
+}
+
+#header{
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background-color:#1a1b1f;
+    border:solid 1px #353945;
+    padding: 30px;
+    margin: 10px;
+}
+
+main{
+    display: flex;
+    gap: 30px;
+}
+
+#container-graficos{
+    background-color:#1a1b1f;
+    border:solid 1px #353945;
+
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+    padding: 50px 120px 50px 120px;
+    margin: 20px;
+    
+}
+
+.card-graficos img{
+    width:500px;
+    height: 300px;
+    background-color: darkgrey;
+
+}
+

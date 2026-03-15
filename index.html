@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="icon" type="image/png" href="assets/signal-icon.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <section>
+        <nav id="barra-navegacao">
+            <a href="">Registros</a>
+            <a href="">Usuários cadastrados</a>
+            <div id="user-link">
+                <img src="/assets/user.png">
+                <a href="">User</a>
+            </div>
+        </nav>
+        <header id="header">
+            <h1>Sistema de classificação de ondas cerebrais</h1>
+        </header>
+    </section>
+
+    <main>
+        <section id="container-graficos">
+            <div class="card-graficos">
+                <h2>Sinal original</h2>
+                <img src="/assets/sinal_ruidoso (1).png">
+            </div>
+
+            <div class="card-graficos">
+                <h2>Frequências predominanetes</h2>
+                <h3> 40 HZ</h3>
+                <img src="assets/Analise_freq-sinal-original.png">
+            </div>
+
+            <div class="card-graficos">
+                <h2>Sinal Fitrado</h2>
+                <h3> 40 HZ</h3>
+                <img src="assets/Sinal-filtrado.png">
+            </div>
+        </section>
+
+        <section id="container-complementar">
+            <div id="card-status">
+                <h3>Status olhos</h3>
+                <h4>ABERTOS</h4>
+            </div>
+
+            <div id="card-cerebro">
+                <img src="">
+            </div>
+
+            <div id="card-gravacao">
+                <h3>Inciar Gravação</h3>
+                <button>Iniciar</button>
+            </div>
+
+            <div id="card-acuracia-SVM">
+                <h3>80%</h3>
+                <h4>Acurácia do modelo</h4>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
