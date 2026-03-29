@@ -44,7 +44,7 @@ main{grid-area:main;}
     
 }
 
-#user-link{
+.container-icon-texto{
     display: flex;
     position: relative;
     align-items: center;
@@ -52,11 +52,14 @@ main{grid-area:main;}
     justify-content: center;
     gap: 10px;
     width: 100px;
-    
 }
 
-#user-link img{
-    background-color: aqua;
+.container-icon-texto img{
+    width: 40px;
+    height: 40px;
+}
+
+#user-photo{
     width: 40px;
     height: 40px;
     border-radius: 50%;
@@ -67,8 +70,6 @@ main{grid-area:main;}
     display: flex;
     position: relative;
     justify-content: center;
-    background-color:#1a1b1f;
-    border:solid 1px #353945;
     padding: 30px;
     margin: 10px;
 }
@@ -78,26 +79,107 @@ main{
     gap: 30px;
 }
 
-#container-graficos{
+#container-geral{
     background-color:#1a1b1f;
-    border:solid 1px #353945;
+    border:solid 3px #353945;
 
+    height: 800px;
+    padding: 30px;
+    margin-left: 20px;
+    margin-right: 20px;
+    flex:1;
+}
+
+#container-graficos{
+    flex:1;
+    height: 70%;
+    display: flex;
+    position: relative;
+    gap: 50px;
+}
+
+.card{
     display: flex;
     position: relative;
     flex-direction: column;
     align-items: center;
-    justify-content: center;
     text-align: center;
+    justify-content: center;
+    background-color: black;
 
-    padding: 50px 120px 50px 120px;
-    margin: 20px;
-    
+    width: 300px;
+    height:500px;
+    border: solid 1px lightgrey;
+    flex: 3.33;
+    padding: 10px;
+
 }
 
-.card-graficos img{
-    width:500px;
-    height: 300px;
-    background-color: darkgrey;
+.card canvas{
+    flex: 7;
+    height: 60% !important;
+}
+
+.card h2 {
+    font-size: 14px;
+}
+
+.card h3{
+    font-size: 18px;
+    color: lightblue;
+}
+
+#container-complementar{
+    flex:1;
+    height: 30%;
+    display: flex;
+    position: relative;
+    gap: 20px;
+
+}
+
+.card-complementar{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    background-color: black;
+
+    width: 400px;
+    height: 215px;
+    border: solid 1px lightgrey;
+    flex: 3.33;
+    padding: 10px;
+    overflow: hidden;
+}
+
+#cerebro-3d{
+    width: 100%;
+    height: 100%;
+}
+
+#status-olhos{
+    font-size: 20px;
+    color: lightblue;
+}
+
+.card-complementar button{
+    width: 200px;
+    height: 40px;
+    background-color: rgb(6, 6, 161);
+    border-radius: 5px;
+}
+
+.card:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(255,255,255,0.4);
+}
+
+.card-complementar:hover{
+    transform: translateY(-8px) scale(1.02);
+    box-shadow: 0 10px 25px rgba(255, 255, 255, 0.4);
 
 }
 
